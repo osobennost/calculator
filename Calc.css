@@ -1,0 +1,232 @@
+#calculator {
+    width: 549px;
+	height: 657px;
+    
+    float: left;
+    margin-left: 160px;
+    margin-top: 130px;
+    margin-right: 100px;
+    margin-bottom: 130px;
+    padding: 51px;
+    padding-top: 20px;
+	
+	background: #92d2f0;
+	background: linear-gradient(to bottom right, #92d2f0, #f6f7f8);
+	border-radius: 15px;
+	box-shadow: -1.3em 0 1.4em #1c3244;
+}
+
+.screen {
+    width: 453px;
+    height: 70px;
+
+    margin: auto;
+    padding: 0px;
+    float: none;
+    background: #1c3244;
+    background: linear-gradient(to bottom right, #1c3244, #375a7e);
+    border-radius: 10px;
+    box-shadow: inset 0 8px 8px rgba(0, 0, 0, 0.2);
+    
+    font-size: 50px;
+    line-height: 65px;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.ripp {
+    margin: auto;
+    margin-bottom: 15px;
+    
+    font-family: serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #435488;
+}
+
+.keys {
+    margin-top: 30px;
+}
+
+span {
+    float: left;
+    cursor: pointer;
+    width: 110px;
+    height: 70px;
+
+    background: white;
+    border-radius: 50px;
+    box-shadow: inset -5px -3px 12px 2px rgba(0, 0, 0, 0.2);
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+    color: #888;
+    line-height: 65px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.reset {
+    width: 453px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+
+    background: linear-gradient(to bottom right, #f79188, #fc4848);
+    border-radius: 20px;
+    box-shadow: inset -7px -5px 6px 2px rgba(0, 0, 0, 0.2);
+
+    font-size: 40px;
+    line-height: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    letter-spacing: 10px;
+}
+
+.operator {
+    background: #ffe6f2;
+}
+
+.eval {
+    background: #e8ffe6;
+}
+
+.reset:hover {
+    background: linear-gradient(to bottom right, #ff6e61, #ff2d2d);  
+}
+
+.reset:active {
+    background: linear-gradient(to bottom right, #ff2d2d, #ff6e61);
+    box-shadow: inset 7px 5px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+span:hover {
+    background: linear-gradient(to bottom right, #cfabff, #ca6eff);
+    color: #f6f7f8;
+}
+
+span:active {
+    box-shadow: inset 5px 3px 12px 2px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom right, #ca6eff, #cfabff);
+}
+
+.eval:hover {
+    background: linear-gradient(to bottom right, #d9ffca, #9ffd96);
+    color: black;
+}
+
+.eval:active {
+    box-shadow: inset 5px 3px 12px 2px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom right, #9ffd96, #d9ffca);
+}
+
+.simple {
+    width: 800px;
+    height: 100px;
+    float: left;
+    margin-top: 200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    color: white;
+    font-family: inherit;
+    font-style: italic;
+    text-align: center;
+}
+
+.how {
+    float: left;
+    cursor: pointer;
+    width: 270px;
+    height: 70px;
+
+    background: white;
+    border-radius: 50px;
+    box-shadow: inset -7px -6px 4px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 265px;
+    margin-bottom: 20px;
+
+    color: #544848;
+    line-height: 65px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.how:hover {
+    background: rgb(208, 252, 199);
+}
+
+.how:active {
+    background: rgb(208, 252, 199);
+    box-shadow: inset 9px 7px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+#popup {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    padding: 15px;
+    background: lightgray;
+    border: 0px;
+    border-radius: 10px;
+    color: #5e5e61;
+    font-size: 35px;
+}
+
+#popup:target {
+    display: block;
+}
+
+.close {
+    display: inline-block;
+    border: 1px;
+    border-radius: 5px;
+    color: #3a3a3a;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: #a7a7a7;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: #c0c0c2;
+}
+
+#zatemnenie {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#zatemnenie:target {
+    display: block;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="Calc.css">
+        <style>
+            body {
+                background: url(background.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id='calculator'>
+            <div class='ripp' align="center">
+                Ripp's Calculator Ltd.
+            </div>
+            <div class='screen'>
+                <input disabled type='text' class='screen' id='display' value='0'>
+            </div>
+            <div class='reset' id='resetButton'>RESET</div>
+            <div class='keys'>
+                <span class='number'>7</span>
+                <span class='number'>8</span>
+                <span class='number'>9</span>
+                <span class='operator' value='Сложение'>+</span>
+                <span class='number'>4</span>
+                <span class='number'>5</span>
+                <span class='number'>6</span>
+                <span class='operator' value='Вычитание'>-</span>
+                <span class='number'>1</span>
+                <span class='number'>2</span>
+                <span class='number'>3</span>
+                <span class='operator' value='Деление'>/</span>
+                <span class='number'>0</span>
+                <span id="decimal">.</span>
+                <span class='operator eval' id='result'>=</span>
+                <span class='operator' value='Умножение'>x</span>
+            </div>
+        </div>
+        <div class='simple'>
+            Простой калькулятор
+            <a href="#zatemnenie" class='how'>Как это работает?</a> 
+            <div id="zatemnenie">
+                <div id='popup'>
+                    <ol>
+                        <li>Сложение: +</li>
+                        <li>Вычитание: -</li>
+                        <li>Умножение: x</li>
+                        <li>Деление: /</li>
+                        <li>Сброс: RESET</li>
+                    </ol>
+                    <a href="#" class="close">Закрыть окно</a>
+                </div>
+            </div>
+        </div>
+        <script src='Calc.js'></script>
+    </body>
+</html>
